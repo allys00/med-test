@@ -13,5 +13,9 @@
   <ion-searchbar placeholder="Procurar em minhas provas"></ion-searchbar>
   <main class="main-content">
     <app-accordion [grades]="grades"></app-accordion>
+    <div class="create-grade">
+      <ion-button shape="round" color="tertiary" (click)="openCreateGrade()">MONTAR PROVA</ion-button>
+    </div>
+    <app-menu></app-menu>
   </main>
 </ion-content>

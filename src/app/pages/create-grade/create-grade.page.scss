@@ -1,0 +1,58 @@
+.create-grade-content {
+    background-color: var(--ion-color-primary-shade);
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .grade-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        width: 100%;
+
+        .info {
+            text-align: center;
+            color: var(--ion-color-tertiary-contrast);
+            letter-spacing: .8px;
+
+            strong {
+                color: #fff;
+            }
+        }
+
+        ion-button {
+            &.left {
+                --border-radius: 0 20px 20px 0;
+                margin-left: -3px;
+            }
+
+            &.right {
+                --border-radius: 20px 0 0 20px;
+                margin-right: -3px;
+            }
+
+
+        }
+    }
+
+    .qtd_questions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        margin: 1.5rem;
+        padding: 1.4rem;
+        border: 1px solid var(--ion-color-tertiary);
+        width: 100%;
+        font-size: 1.2rem;
+        background-color: var(--ion-color-primary);
+
+        strong {
+            color: var(--ion-color-tertiary);
+        }
+    }
+}

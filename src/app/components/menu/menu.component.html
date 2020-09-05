@@ -1,0 +1,16 @@
+<div class="menu" [ngClass]="{'isOpen': menuIsOpen}">
+  <div class="logo-menu-border" (click)="menuIsOpen = !menuIsOpen">
+  </div>
+  <div class="menus-content">
+    <h1 class="user-name">Olá, André Alys!</h1>
+    <div *ngFor="let menu of menus" class="menu-item">
+      <h2 class="title"> <span></span> {{menu.title}} <span></span></h2>
+      <div class="buttons">
+        <div class="button" *ngFor="let button of menu.buttons" (click)="button.onClick()">
+          <ion-icon [src]="button.icon"></ion-icon>
+          <label>{{button.label}}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

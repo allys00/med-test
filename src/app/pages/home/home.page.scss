@@ -21,9 +21,19 @@
   }
 
   .main-content {
+    position: relative;
     padding: 1rem;
     height: calc(100% - 60px);
     overflow: auto;
     background-color: var(--ion-color-secondary-shade);
+  }
+
+  .create-grade {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 100px;
+    left: 0;
   }
 }

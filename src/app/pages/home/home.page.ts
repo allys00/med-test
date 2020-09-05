@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { QuestionsStats } from 'src/app/models/utils.model';
+import { ModalController } from '@ionic/angular';
+import { CreateGradePage } from '../create-grade/create-grade.page';
 
 @Component({
   selector: 'app-home',
@@ -23,7 +25,14 @@ export class HomePage {
     error: 20,
     unfulfilled: 90
   }]
+  constructor(public modalController: ModalController) {
+  }
 
-  constructor() { }
-
+  async openCreateGrade() {
+    const modal = await this.modalController.create({
+      component: CreateGradePage,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
 }

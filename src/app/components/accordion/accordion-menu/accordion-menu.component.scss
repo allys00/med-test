@@ -1,0 +1,23 @@
+.menu-options {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            ion-button {
+                font-size: .9rem;
+                text-align: left;
+                .button-inner {
+                    justify-content: flex-start;
+                }
+            }
+            &.created-at {
+                p{
+                    text-align: center;
+                    font-size: .8rem;
+                    color: var(--ion-color-secondary)
+                }
+            }
+        }
+    }
+}

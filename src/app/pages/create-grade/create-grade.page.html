@@ -1,0 +1,49 @@
+<ion-header [translucent]="true" mode="ios">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="dismiss()">
+      <ion-icon name="close-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      Montar Provas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <main class="create-grade-content">
+    <app-grade-questions-stats [questionsStats]="questions">
+    </app-grade-questions-stats>
+
+    <div class="grade-info">
+      <ion-button color="tertiary" class="left" [disabled]="true">
+        <ion-icon slot="icon-only" name="remove-outline"></ion-icon>
+      </ion-button>
+
+      <p class="info">
+        Sua prova possui <br />
+        <strong>
+          {{questions.qtd_questions}} QUESTÕES
+        </strong> <br />
+        <small>
+          de um total de <strong>249 questões filtradas</strong>. <br />
+          Aumente o número de questões.
+        </small>
+      </p>
+
+      <ion-button color="tertiary" class="right">
+        <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+      </ion-button>
+    </div>
+
+    <div class="qtd_questions">
+      <strong>
+        149 QUESTÕES
+      </strong>
+      <small>
+        restantes no filtro selecionado
+      </small>
+    </div>
+
+    <ion-button shape="round" color="tertiary">REALIZAR PROVA</ion-button>
+  </main>
+</ion-content>
