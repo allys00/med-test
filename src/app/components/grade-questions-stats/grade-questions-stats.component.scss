@@ -1,0 +1,79 @@
+    .content {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: var(--ion-color-primary-shade);
+        color: var(--ion-color-secondary-contrast);
+
+        .graph {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .question-infos {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: var(--ion-color-secondary-shade);
+                border-radius: 50%;
+                text-transform: uppercase;
+
+                small {
+                    font-weight: 400;
+                }
+
+                strong {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .grade-values {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-left: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .grade-questions {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 35px;
+                background-color: var(--ion-color-secondary-shade);
+                padding: .2rem .4rem;
+                font-size: .8rem;
+                font-weight: 400;
+                margin-bottom: .3rem;
+
+                &:first-child {
+                    border-radius: 10px 10px 0 0;
+                }
+
+                &:last-child {
+                    margin: 0;
+                    border-radius: 0 0 10px 10px;
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                .value {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 50px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }

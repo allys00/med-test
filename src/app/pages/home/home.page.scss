@@ -1,0 +1,29 @@
+:host {
+  ion-searchbar {
+    padding: 0;
+    background: var(--ion-color-secondary);
+    color: var(--ion-color-secondary-contrast);
+    --icon-color: var(--ion-color-secondary-contrast);
+    --placeholder-color: (--ion-color-secondary-contrast);
+
+    .searchbar-input-container {
+      --height: 100% !important;
+    }
+  }
+
+  .searchbar-input {
+    --background: transparent;
+  }
+
+
+  .searchbar-search-icon {
+    --color: var(--ion-color-secondary-contrast);
+  }
+
+  .main-content {
+    padding: 1rem;
+    height: calc(100% - 60px);
+    overflow: auto;
+    background-color: var(--ion-color-secondary-shade);
+  }
+}

@@ -1,0 +1,18 @@
+<div class="content">
+  <div class="graph">
+    <div>
+      <canvas #doughnutCanvas width="120" height="120"></canvas>
+    </div>
+    <div class="question-infos">
+      <small>Total de</small>
+      <strong> {{questionsStats.qtd_questions}} </strong>
+      <small>Questões</small>
+    </div>
+  </div>
+  <div class="grade-values">
+    <div class="grade-questions" *ngFor="let label of labels">
+      <p>{{label.name}}</p>
+      <span class="value" [style.backgroundColor]="label.color">{{questionsStats[label.key]}}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<section>
+  <div class="accordion-item" *ngFor="let questionStats of grades">
+    <div class="title">
+      <ion-button (click)="questionStats.isOpen = !questionStats.isOpen">
+        <ion-icon slot="icon-only" name="chevron-down-outline"></ion-icon>
+      </ion-button>
+      <p>{{ questionStats.name }}</p>
+      <ion-button>
+        <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="accordion-content" *ngIf="questionStats.isOpen">
+      <app-grade-questions-stats [questionsStats]="questionStats">
+      </app-grade-questions-stats>
+    </div>
+  </div>
+</section>

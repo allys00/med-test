@@ -5,15 +5,18 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { AccordionComponent } from 'src/app/components/accordion/accordion.component';
+import { GradeQuestionsStatsComponent } from 'src/app/components/grade-questions-stats/grade-questions-stats.component';
 
 
 @NgModule({
+
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, AccordionComponent, GradeQuestionsStatsComponent]
 })
-export class HomePageModule {}
+export class HomePageModule { }

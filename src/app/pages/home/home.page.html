@@ -1,0 +1,17 @@
+<ion-header [translucent]="true" mode="ios">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icon/sair.svg"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      Montar Provas <br /> <small>Minhas Provas</small>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar placeholder="Procurar em minhas provas"></ion-searchbar>
+  <main class="main-content">
+    <app-accordion [grades]="grades"></app-accordion>
+  </main>
+</ion-content>

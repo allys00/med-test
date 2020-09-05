@@ -1,0 +1,24 @@
+:host {
+    .accordion-item {
+        border-radius: 10px;
+        overflow: hidden;
+        font-weight: 500;
+        margin-bottom: .5rem;
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--ion-color-primary);
+            color: var(--ion-color-primary-contrast);
+
+            p {
+                margin: 0;
+            }
+
+            ion-button {
+                font-size: .8rem;
+            }
+        }
+       
+    }
+}
